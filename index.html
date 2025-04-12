@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Live blackmarket USD to MVR exchange rate in Maldives. Updated daily.">
-  <title>Dollar Tracker MV</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dollar Tracker MV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>Dollar Tracker MV</h1>
-    <div id="rate-box">
-      <span id="rate"></span>
-      <span id="indicator"></span>
+    <div class="container">
+        <div class="rate-box">
+            <h1 class="rate">Loading...</h1>
+            <div class="rate-change-indicator"></div>
+        </div>
+        <div class="chart-container">
+            <canvas id="rateChart"></canvas>
+        </div>
     </div>
-    <p id="last-updated"></p>
-    <canvas id="rateChart"></canvas>
-    <p class="note">This site displays the unofficial blackmarket USD/MVR rate in the Maldives.</p>
-  </main>
-  <script src="script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

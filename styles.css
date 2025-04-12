@@ -1,29 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: #121212;
-    color: #fff;
-    font-family: sans-serif;
-    padding: 1rem;
-    margin: 0;
-  }
-  main {
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-  }
-  #rate-box {
-    font-size: 2.5rem;
-    margin: 1rem 0;
-    background: #1e1e1e;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    display: inline-block;
-  }
-  #indicator {
-    font-size: 1.5rem;
-    margin-left: 0.5rem;
-  }
-  .note {
-    font-size: 0.9rem;
-    margin-top: 2rem;
-    color: #aaa;
-  }
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.rate-box {
+  background-color: #1E1E1E;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.rate {
+  font-size: 48px;
+  font-weight: bold;
+  color: #00FF00;
+}
+
+.rate-change-indicator {
+  font-size: 24px;
+  color: #FF4500;
+}
+
+.chart-container {
+  max-width: 100%;
+  height: 400px;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
