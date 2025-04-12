@@ -81,7 +81,8 @@ function updateChart(rates) {
                     }
                 }
             }
-        });
+        }
+    });
 }
 
 // Initialize
